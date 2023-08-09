@@ -1,0 +1,870 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  background-color: aliceblue;
+}
+nav {
+  height: 9vh;
+  /* border: 2px solid red; */
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-cont {
+  /* border: 2px solid violet; */
+  width: 95%;
+  height: 95%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.n-first {
+  /* border: 2px solid black; */
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  /* border: 2px solid blue; */
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 10px;
+  line-height: 80%;
+}
+
+.nav-logo-top img {
+  width: 100%;
+}
+.nav-logo-bottom em {
+  font-size: 13px;
+  color: rgba(128, 128, 128, 0.822);
+  font-weight: 600;
+  letter-spacing: 0.75px;
+}
+.nav-logo-bottom em span {
+  color: gold;
+}
+.n-search {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  /* border: 2px solid aqua; */
+  align-items: center;
+  justify-content: center;
+}
+.n-s-f {
+  background-color: aliceblue;
+  /* height: 90%; */
+  /* padding: 10px; */
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.n-s-f i {
+  /* border: 2px solid red; */
+  font-size: 20px;
+  color: grey;
+  padding: 11.5px;
+}
+.n-s-s {
+  width: 100%;
+}
+.n-s-s input {
+  width: 100%;
+  padding: 10px;
+  background-color: aliceblue;
+  font-size: 19px;
+  border: none;
+  font-weight: 400;
+  color: grey;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*********************** Nav First End ******************************/
+/*************************Nav Second Start******************/
+
+.n-second {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.n-s-cont {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.ns2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.769);
+}
+.nsm {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.seller span {
+  margin-left: 5px;
+}
+
+.sign-in span {
+  margin: 0 5px;
+}
+.fa-chevron-down {
+  font-size: 13px;
+}
+.dot-drop {
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+.dot-drop:hover {
+  background-color: rgb(220, 232, 243);
+}
+.drop {
+  display: none;
+}
+.dot-drop:hover .drop {
+  position: absolute;
+  top: 7%;
+  right: 6%;
+  height: 20vh;
+  width: 15vw;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px 3px 8px 8px;
+  box-shadow: 0px 0px 13px -2px black;
+}
+.drop ul {
+  height: 90%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.drop ul li {
+  list-style: none;
+  width: 100%;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+.drop ul li:hover {
+  background-color: aliceblue;
+}
+.drop ul li a {
+  color: rgba(0, 0, 0, 0.737);
+  text-decoration: none;
+  font-size: 17px;
+}
+.sign-in {
+  height: 100%;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.769);
+}
+.sign-in:hover .fa-chevron-down {
+  transform: rotate(180deg);
+}
+.sign-in:hover {
+  background-color: rgba(48, 81, 228, 0.979);
+}
+.sign-in:hover span,
+.sign-in:hover .si {
+  color: white;
+}
+.s-drop {
+  display: none;
+}
+.sign-in:hover .s-drop {
+  width: 18vw;
+  position: absolute;
+  top: 7%;
+  /* border: 2px solid red; */
+  height: 37vh;
+  border-radius: 3px 3px 8px 8px;
+  box-shadow: 0px 0px 13px -2px black;
+  background-color: white;
+  display: block;
+}
+.s-drop .top {
+  margin: auto;
+  width: 90%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s-drop .top .nc {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.779);
+  cursor: pointer;
+}
+.s-drop .top .su {
+  font-size: 18px;
+  color: blue;
+  cursor: pointer;
+}
+.s-drop .bottom {
+  height: 82%;
+}
+.s-drop .bottom ul {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.s-drop .bottom ul li {
+  list-style: none;
+}
+.s-drop .bottom ul li:hover {
+  background-color: rgba(126, 135, 143, 0.114);
+}
+.s-drop .bottom ul li .sdba a {
+  text-decoration: none;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.788);
+  cursor: pointer;
+}
+.sdba {
+  width: 90%;
+  margin: auto;
+  padding: 5px 0;
+}
+.sdba i {
+  margin-right: 10px;
+}
+/*************************Nav end *****************************/
+
+/*********************************Top menu section*******************************/
+
+.tm-s {
+  width: 100%;
+  height: 19vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tms-cont {
+  width: 98%;
+  height: 90%;
+  background-color: white;
+}
+.tmsc-ul {
+  width: 87%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+.tmscu-li {
+  list-style: none;
+  height: 100%;
+  width: 10%;
+}
+.tmscul-a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-decoration: none;
+}
+.tmscul-a-all {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tmscul-a img {
+  width: 50%;
+}
+.tmscula-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+/******************************** Image Slider *********************************/
+.image-slider {
+  height: 34vh;
+  width: 100%;
+  margin: 10px 0;
+}
+.is-cont {
+  width: 98%;
+  height: 100%;
+  margin: auto;
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/737eea56eb7608dc.jpg?q=20");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: image_slider 60s infinite ease normal;
+}
+@keyframes image_slider {
+  0% {
+    /* background-image: url('https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/737eea56eb7608dc.jpg?q=20'); */
+  }
+  15% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/0eb1625a52e3af95.jpg?q=20");
+  }
+  27% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/58ffd2fd90f0e2a1.png?q=20");
+  }
+  39% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/a56c8e37c2996b68.png?q=20");
+  }
+  52% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3161eca635263655.png?q=20");
+  }
+  62% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3d4633bc79618aad.jpg?q=20");
+  }
+  75% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3d4633bc79618aad.jpg?q=20");
+  }
+  88% {
+    background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/3ecd68fb97aacb30.png?q=20");
+  }
+}
+/**************************** Promotion image********************************/
+
+.promotion-img {
+  width: 100%;
+  height: 17vh;
+  margin: 10px 0;
+  background-color: transparent;
+}
+.pimg-cont {
+  width: 98%;
+  height: 100%;
+  margin: auto;
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/1600/140/image/55737e38f5abcc5a.jpg?q=20");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*******************************Main section **************************************/
+.Main {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+/********************************** section-a **************************************/
+.A {
+  height: 46vh;
+  width: 98%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  justify-content: space-between;
+}
+.A-top-offers {
+  height: 95%;
+  width: 84%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.Ato-cont {
+  width: 100%;
+  height: 93%;
+}
+.Atoc-top {
+  width: 98%;
+  height: 20%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Atoc-top span {
+  font-size: 21px;
+  font-weight: 500;
+}
+.Atoc-top i {
+  background-color: blue;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 8px 11px;
+  color: white;
+}
+.Atoc-bottom {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.Atoc-b-item {
+  text-decoration: none;
+  width: 15.5%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.719);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Atoc-b-item .img {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 80%;
+}
+.Atoc-b-item-1 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/ktketu80/projector/k/0/n/ph510pg-atrz-8-8-ph510pg-hd-lg-original-imag6vx3avzt9zbr.jpeg?q=70");
+}
+.Atoc-b-item-2 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/l44hyfk0/printer/e/e/1/dcp-t426w-brother-original-imagf37kyz3mavub.jpeg?q=70");
+}
+.Atoc-b-item-3 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/xif0q/monitor/j/b/o/-original-imagpu2tpgtuhgbh.jpeg?q=70");
+}
+.Atoc-b-item-4 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/xif0q/note-counting-machine/l/m/y/-original-imagkf6n3afhmv9s.jpeg?q=70");
+}
+.Atoc-b-item-5 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/l3j2cnk0/electric-kettle/q/z/c/-original-imagemy6egjb6zme.jpeg?q=70");
+}
+.Atoc-b-item-6 .img {
+  background-image: url("https://rukminim2.flixcart.com/image/416/416/xif0q/induction-cook-top/q/x/u/-original-imagqkfnhqwvwszf.jpeg?q=70");
+}
+.Atoc-b-item .img img {
+  width: 90%;
+}
+.Atoc-b-item .title {
+  font-size: 15px;
+  color: black;
+  font-weight: 400;
+}
+.Atoc-b-item .price {
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+}
+.A-promotion {
+  width: 15%;
+  height: 100%;
+}
+.A-promotion a {
+  width: 100%;
+  height: 100%;
+}
+.A-promotion a .img {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/530/810/image/c974ca9dee81f3f4.png?q=20");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/************************************* section-B ***********************************/
+.B {
+  height: 35vh;
+  width: 98%;
+  margin: 15px auto;
+  background-color: white;
+}
+.B-cont {
+  width: 99.5%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.B-cont a {
+  width: 33%;
+  height: 100%;
+}
+.Bimg {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.Bimg-a {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/548e8309cdf22e42.jpg?q=20");
+}
+.Bimg-b {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/acb3edfdd5240429.jpeg?q=20");
+}
+.Bimg-c {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/f2d3cc50255eece0.jpg?q=20");
+}
+
+/**************************************** c ********************************************/
+
+.c {
+  height: 45vh;
+  width: 98%;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-cont{
+  height: 92%;
+  width: 98%;
+}
+.cc-top{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cc-top h2 a{
+  text-decoration: none;
+}
+.cc-top i{
+  font-size: 12px;
+  color: white;
+  background-color: blue;
+  padding: 8px 11px;
+  border-radius: 50%;
+}
+.cc-bottom{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cc-bottom a{
+  width: 15.8%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 7px;
+}
+.ccba-cont{
+  width: 95%;
+  height: 95%;
+}
+.ccba-cont .img {
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.ccbac-img1{
+  background-image: url('https://rb.gy/f6d0k');
+  background-size: 91%;
+}
+.ccbac-img2{
+  background-size: contain;
+  background-image: url('https://rb.gy/3kz4k');
+}
+.ccbac-img3{
+  background-image: url('https://rb.gy/71y2q');
+}
+.ccbac-img4{
+background-image: url('https://t.ly/6kRew');
+}
+.ccbac-img5{
+background-image: url('https://t.ly/WwsBN');
+}
+.ccbac-img6{
+background-image: url('https://t.ly/O6Abx');
+}
+.ccba-cont .text{
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+.ccba-cont .text p:last-child{
+  font-size: 17px;
+  font-weight: 600;
+}
+/****************************************** D ******************************************/
+.d-a {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/fc916120f9114c4c.jpg?q=20");
+}
+.d-b {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/643291aeda603d15.jpg?q=20");
+}
+.d-c {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/a3236cb3c9793652.jpg?q=20");
+}
+
+/*************************************** E *******************************************/
+.E {
+  width: 98%;
+  height: 140vh;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.E-cont{
+  width: 98%;
+height: 98%;
+}
+.Ec-top{
+  width: 98%;
+  margin: auto;
+  height: 7%;
+  font-size: 25px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  cursor:default;
+}
+.Ec-bottom{
+  height: 93%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ecb-img{
+  width: 100%;
+  height: 31%;
+  display: flex;
+  justify-content: space-between;
+}
+.ecb-img a{
+  width: 32.4%;
+  height: 100%;
+}
+.ecb-img a img{
+  width: 100%;
+  height: 100%;
+}
+
+/****************************************** F ***************************************/
+.F-1 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/bcbb1910d6477821.jpg?q=20");
+}
+.F-2 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/df2e1aac0dcceef6.jpg?q=20");
+}
+.F-3 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/2a4c4650829bf098.jpg?q=20");
+}
+
+/****************************************** G ********************************************/
+
+.G-1 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/142176fa64b123d5.jpg?q=20");
+}
+.G-2 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/57571bab0eac47d8.jpg?q=20");
+}
+.G-3 {
+  background-image: url("https://rukminim1.flixcart.com/fk-p-flap/520/280/image/6cd517ce67b23aa7.jpg?q=20");
+}
+
+/**************************************** Bottom Section ***********************************/
+
+.bottom {
+  height: auto;
+  width: 100%;
+  margin-top: 45px;
+  background-color: rgba(255, 255, 255, 0.683);
+}
+.bott-cont {
+  width: 97%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.603);
+}
+.l1 {
+  margin: 20px 0;
+}
+.bcl {
+  margin-top: 10px;
+}
+.bcl .head {
+  text-transform: uppercase;
+  display: inline-block;
+}
+.bcl a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.749);
+  font-size: 12.5px;
+}
+.flipkart-detail {
+  margin-top: 40px;
+}
+.fdh {
+  margin-top: 13px;
+  color: rgba(0, 0, 0, 0.507);
+  text-transform: capitalize;
+}
+.fdp {
+  margin-top: 10px;
+  font-size: 12px;
+  word-spacing: 1px;
+}
+.fdp a {
+  text-decoration: none;
+}
+
+/********************************** footer ******************************/
+
+footer {
+  background-color: black;
+  height: 45vh;
+  width: 100%;
+}
+.footer-top{
+  height: 78%;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.footer-top-cont{
+  width: 100%;
+  height: 72%;
+  display: flex;
+}
+.footer-links {
+  width: 57%;
+  display: flex;
+  height: 100%;
+  border-right: 1px solid rgb(92, 91, 91);
+}
+.f-u{
+  display: flex;
+  width: 100%;
+}
+.fu-l{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  list-style: none;
+}
+.ful-title{
+  color: rgba(255, 255, 255, 0.568);
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+.fu-l a{
+text-decoration: none;
+color: white;
+font-size: 14px;
+}
+.fu-l a:hover{
+  text-decoration:underline;
+}
+.ful-title {
+  text-transform: uppercase;
+}
+.fu-l a {
+  text-transform: capitalize;
+  line-height: 140%;
+  font-weight: 500;
+}
+.YouTube,
+.EPR,
+.FAQ {
+  text-transform: none;
+}
+.footer-add{
+  width: 43%;
+  height: 100%;
+}
+.fa-u{
+  display: flex;
+  justify-content: space-between;
+}
+.fau-l{
+  color: white;
+  list-style: none;
+  font-size: 14px;
+  line-height: 140%;
+}
+.fau-l a{
+  text-decoration: none;
+  color: blue;
+  font-size: 17px;
+}
+.faul-title{
+  color: rgba(255, 255, 255, 0.568);
+  margin-bottom: 12px;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: rgb(81, 80, 80);
+}
+.footer-bottom{
+  height: 22%;
+  width: 100%;
+}
+.fb-cont{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+.fb-cont ul{
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.fb-cont ul li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.fb-cont ul li i{
+  color: yellow;
+  font-size: 10px;
+  padding-right: 8px;
+}
+.fbc-img{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
